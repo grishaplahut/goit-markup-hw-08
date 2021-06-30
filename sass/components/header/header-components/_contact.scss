@@ -1,0 +1,36 @@
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item + .contact__item {
+  margin-left: 50px;
+}
+
+.contact__links {
+  color: $light-grey;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $blue;
+  }
+}
+
+.contact__icons {
+  fill: currentColor;
+  margin-right: 10px;
+}

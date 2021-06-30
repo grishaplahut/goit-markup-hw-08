@@ -1,0 +1,46 @@
+.our-value {
+  background-color: $white;
+}
+
+.our-value__list {
+  display: flex;
+}
+
+.our-value__item + .our-value__item {
+  margin-left: 50px;
+}
+
+.our-value__container-for-icon {
+  background-color: $very-light-grey;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-value__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.our-value__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.our-value__descriptions {
+  color: $light-grey;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
