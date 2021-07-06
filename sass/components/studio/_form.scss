@@ -14,6 +14,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-feild__label {
@@ -91,23 +95,26 @@
 }
 
 .policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .policy__label {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14.06px;
   letter-spacing: 0.03em;
   color: $light-grey;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .policy__checkbox {
@@ -142,12 +149,6 @@
 }
 
 .policy__agreement {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: $blue;
   margin-left: 6px;

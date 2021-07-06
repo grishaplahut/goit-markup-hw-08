@@ -10,12 +10,8 @@
   }
 }
 
-.addresses__item {
+.addresses__item:not(:last-child) {
   margin-bottom: 8px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .addresses__link {

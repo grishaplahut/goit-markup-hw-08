@@ -5,6 +5,32 @@
 }
 
 .footer__parts {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.main-logo__footer {
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.addresses {
+  margin-bottom: 60px;
+}
+.subscribe {
+  margin-bottom: 60px;
+}
+
+.container--tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }

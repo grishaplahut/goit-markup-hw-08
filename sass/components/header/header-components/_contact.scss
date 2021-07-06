@@ -1,10 +1,25 @@
 .contact {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .contact__item + .contact__item {
-  margin-left: 50px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .contact__links {
@@ -16,8 +31,6 @@
   line-height: 1.172;
   letter-spacing: 0.02em;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: inline-flex;
   align-items: center;
   transition-property: color;
@@ -27,6 +40,11 @@
   &:focus,
   &:hover {
     color: $blue;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

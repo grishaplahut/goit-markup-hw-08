@@ -1,22 +1,30 @@
 .navigation {
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.navigation__item + .navigation__item {
-  margin-left: 50px;
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation__link {
+  display: block;
+  position: relative;
+
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
-  display: block;
+  color: #212121;
+
   padding-top: 32px;
   padding-bottom: 32px;
-  position: relative;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,7 +48,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   &:hover::after {
     opacity: 1;
   }
