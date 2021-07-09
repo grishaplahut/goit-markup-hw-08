@@ -1192,7 +1192,7 @@ img {
 }
 
 .our-value__item {
-  width: 100%;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
