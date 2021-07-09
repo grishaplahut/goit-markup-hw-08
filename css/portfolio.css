@@ -273,6 +273,7 @@ ul {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  min-width: 480px;
 }
 
 body.modal-open {
