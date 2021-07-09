@@ -1,7 +1,12 @@
 .our-value__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
     margin: -15px;
   }
 
@@ -11,9 +16,7 @@
 }
 
 .our-value__item {
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
+  max-width: 450px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
